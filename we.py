@@ -55,13 +55,13 @@ with st.container():
     with image_column:
         st.image(image_im)
 
-with st.container():
-    image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.video("images/video_2025-05-31_10-31-15.mp4")
-    with text_column:
-        st.subheader("Practicing on a Bobcat Skid loader")
-        st.write("Leveling the ground with a BOBCAT skid loader.")
+#with st.container():
+   # image_column, text_column = st.columns((1, 2))
+   # with image_column:
+       # st.video("images/video_2025-05-31_10-31-15.mp4")
+  #  with text_column:
+       # st.subheader("Practicing on a Bobcat Skid loader")
+       # st.write("Leveling the ground with a BOBCAT skid loader.")
 
 with st.container():
     image_column, text_column = st.columns((1, 2))

@@ -2,7 +2,8 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 import requests
 from PIL import Image
-
+from streamlit_option_menu import option_menu
+from st_social_media_links import SocialMediaIcons
 
 
 def load_lottieurl(url):
@@ -14,6 +15,8 @@ def load_lottieurl(url):
 lottie_tec = load_lottieurl("https://lottie.host/f01a21a4-3e85-4a93-b86f-c65634d56171/ynBOws9BSV.json")
 image_im = Image.open("images/photo_2025-05-31_09-57-01.jpg")
 vice_im = Image.open("images/photo_2025-05-31_09-55-47.jpg")
+
+
 
 
 st.set_page_config(page_title="Mayura Silva", layout="wide")
@@ -40,7 +43,19 @@ with st.container():
         st.header("Experiance")
         st.write("##")
         st.subheader("2025/01-2025/06\n\nInternship at Michelin Lanka PLC")
-        st.write("-Predictive Maintanance\n\n-Hydraulic systems\n\n-Mig and Arc welding\n\n-Gearbox Mll and Mixxer overhauling")
+        st.write("-Predictive Maintanance\n\n-Hydraulic systems\n\n-Mig and Arc welding\n\n-Gearbox Mill and Mixxer overhauling")
+    with right_coloum:
+        st.subheader("Socials")
+        social_media_links = [
+            "https://www.linkedin.com/in/mayura-silva-a9717022a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "https://github.com/ggitsmomo",
+            "https://www.instagram.com/_mayura_silva_?utm_source=qr&igsh=MWRmZHIyNXpkNjVoeQ=="
+        ]
+        social_media_icons = SocialMediaIcons(social_media_links)
+
+        social_media_icons.render()
+    
+
 
 
 with st.container():
@@ -57,10 +72,10 @@ with st.container():
 
 #with st.container():
    # image_column, text_column = st.columns((1, 2))
-   # with image_column:
-       # st.video("images/video_2025-05-31_10-31-15.mp4")
-  #  with text_column:
-       # st.subheader("Practicing on a Bobcat Skid loader")
+    #with image_column:
+        #st.video("images/video_2025-05-31_10-31-15.mp4")
+   # with text_column:
+        #st.subheader("Practicing on a Bobcat Skid loader")
        # st.write("Leveling the ground with a BOBCAT skid loader.")
 
 with st.container():
@@ -70,8 +85,6 @@ with st.container():
     with text_column:
         st.subheader("This vice was made by me with hand tools and a bench drill.")
         st.write("This vice was made as a project to trade selection exam\n\nAs for tools hacksaw, files, tapset, rivetpuncher and bench drill used.")
-
-
 
 with st.container():
     st.write("---")

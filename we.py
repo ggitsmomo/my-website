@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 import requests
 from PIL import Image
-from streamlit_option_menu import option_menu
+#from streamlit_option_menu import option_menu
 from st_social_media_links import SocialMediaIcons
 
 

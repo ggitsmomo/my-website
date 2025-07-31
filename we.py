@@ -44,7 +44,6 @@ with st.container():
         st.write("##")
         st.subheader("2025/01-2025/06\n\nInternship at Michelin Lanka PLC")
         st.write("-Predictive Maintanance\n\n-Hydraulic systems\n\n-Mig and Arc welding\n\n-Gearbox Mill and Mixxer overhauling")
-st.subheader(" 2025/07 - present\n\nInternship at Colombo Dockyard PLC")
     with right_coloum:
         st.subheader("Socials")
         social_media_links = [

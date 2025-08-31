@@ -54,7 +54,15 @@ with st.container():
         social_media_icons = SocialMediaIcons(social_media_links)
 
         social_media_icons.render()
-    
+
+with st.container():
+    st.write("___")
+    left_column, right_coloum = st.columns(2)
+    with left_column:
+        st.write("##")
+        st.subheader("2025/07/01-2025/12/31\n\nInternship at Colombo Dockyard PLC")
+        st.write("-Quality control\n\n-Ship engine repair\n\n-Foundry\n\n-General maintenance\n\n-Ship deck repair")
+            
 
 
 
